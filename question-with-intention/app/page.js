@@ -1,12 +1,10 @@
-import Scene from "@/components/Scene";
-import dynamic from "next/dynamic";
-
-const Scene = dynamic(() => import('@/components/Scene'))
+import CubeScene from '../components/Experience'
 
 export default function Home() {
   return (
-    <main className="h-full">
-      <Scene />
+    <main className=" h-screen">
+      <CubeScene/>
+      
     </main>
   );
 }

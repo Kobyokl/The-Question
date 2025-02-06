@@ -1,10 +1,9 @@
-import CubeScene from '../components/Experience'
+import Experience from '../components/Experience'
 
 export default function Home() {
   return (
     <main className=" h-screen">
-      <CubeScene/>
-      
+      <Experience/>
     </main>
   );
 }

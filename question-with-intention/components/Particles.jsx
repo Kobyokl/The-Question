@@ -16,7 +16,7 @@ import * as THREE from "three";
 //     });
 // }
 
-// ❄️ Heart partciles
+// Heart Partciles
 export default function SnowParticles(props) {
 
     const particles = new Array(props.count).fill().map(() => ({
@@ -49,7 +49,7 @@ export default function SnowParticles(props) {
                 particles[i].position.y = (Math.random() * 5), // y
                 particles[i].position.x = (Math.random() - 0.5) * 10, // x
                 particles[i].position.z = (Math.random() - 0.5) * 10; // z
-            } 
+            }
 
             particle.position.copy(particles[i].position);
 
@@ -61,7 +61,7 @@ export default function SnowParticles(props) {
             {particles.map((particle, i) => (
                 <mesh key={i} position={particle.position}>
                     <boxGeometry args={[0.05, 0.05, 0.05]} />
-                    <meshStandardMaterial color="white" />
+                    <meshStandardMaterial color="red" />
                 </mesh>
             ))}
         </group>
